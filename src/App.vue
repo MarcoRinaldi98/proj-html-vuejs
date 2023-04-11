@@ -15,7 +15,8 @@
     <SectionNewsletter />
   </main>
   <footer>
-
+    <FooterTop />
+    <FooterBottom />
   </footer>
 </template>
 
@@ -30,7 +31,8 @@ import SectionAbout from './components/SectionAbout.vue';
 import SectionTestimonials from './components/SectionTestimonials.vue';
 import SectionBlog from './components/SectionBlog.vue';
 import SectionNewsletter from './components/SectionNewsletter.vue';
-import PageFooter from './components/PageFooter.vue';
+import FooterTop from './components/FooterTop.vue';
+import FooterBottom from './components/FooterBottom.vue';
 
 export default {
   components: {
@@ -44,7 +46,8 @@ export default {
     SectionTestimonials,
     SectionBlog,
     SectionNewsletter,
-    PageFooter
+    FooterTop,
+    FooterBottom
   },
   data() {
     return {
