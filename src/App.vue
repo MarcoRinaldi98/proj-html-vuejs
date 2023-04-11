@@ -8,6 +8,7 @@
     <SectionCallback />
     <SectionContactUs />
     <SectionCourses />
+    <SectionRate />
   </main>
   <footer>
 
@@ -20,6 +21,7 @@ import HeaderJumbotron from './components/HeaderJumbotron.vue';
 import SectionCallback from './components/SectionCallback.vue';
 import SectionContactUs from './components/SectionContactUs.vue';
 import SectionCourses from './components/SectionCourses.vue';
+import SectionRate from './components/SectionRate.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
@@ -29,6 +31,7 @@ export default {
     SectionCallback,
     SectionContactUs,
     SectionCourses,
+    SectionRate,
     PageFooter
   },
   data() {

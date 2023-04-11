@@ -100,7 +100,8 @@ export default {
     text-align: center;
 
     & h3 {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: bold;
         color: variables.$extra-color8;
         padding: 1.5rem 0;
     }
@@ -108,6 +109,7 @@ export default {
     & a {
         @include mixins.button2;
         text-decoration: none;
+        font-size: 12px;
     }
 }
 </style>
