@@ -161,7 +161,7 @@ export default {
 .ms_box {
     margin: 3rem 0;
     position: relative;
-    bottom: -30px;
+    bottom: -80px;
 
     & .ms_rate {
         height: 100%;
