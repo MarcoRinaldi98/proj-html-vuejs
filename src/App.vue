@@ -5,7 +5,7 @@
   </header>
 
   <main>
-
+    <SectionCallback />
   </main>
   <footer>
 
@@ -15,12 +15,14 @@
 <script>
 import HeaderTop from './components/HeaderTop.vue';
 import HeaderJumbotron from './components/HeaderJumbotron.vue';
+import SectionCallback from './components/SectionCallback.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
   components: {
     HeaderTop,
     HeaderJumbotron,
+    SectionCallback,
     PageFooter
   },
   data() {

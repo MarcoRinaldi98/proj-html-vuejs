@@ -23,7 +23,7 @@ export default {
                         </a>
                     </li>
                     <li>
-                        <a class="ms_button" href="#">
+                        <a class="ms_button" href="#callback">
                             BOOK NOW
                         </a>
                     </li>
@@ -65,7 +65,7 @@ export default {
         left: 0;
         width: 100%;
         height: 90px;
-        background-color: rgba($color: variables.$secondary-color, $alpha: 0.7);
+        background-color: rgba($color: variables.$secondary-color, $alpha: 0.4);
 
         & nav {
             @include mixins.d-flex-between;
@@ -141,7 +141,7 @@ export default {
             position: relative;
             @include mixins.d-flex-around;
             flex-direction: column;
-            box-shadow: 0px 0px 2px variables.$color-black;
+            box-shadow: 0px 0px 5px variables.$color-black;
 
             & .ms_price {
                 font-size: 12px;
