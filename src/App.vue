@@ -9,6 +9,7 @@
     <SectionContactUs />
     <SectionCourses />
     <SectionRate />
+    <SectionAbout />
   </main>
   <footer>
 
@@ -22,6 +23,7 @@ import SectionCallback from './components/SectionCallback.vue';
 import SectionContactUs from './components/SectionContactUs.vue';
 import SectionCourses from './components/SectionCourses.vue';
 import SectionRate from './components/SectionRate.vue';
+import SectionAbout from './components/SectionAbout.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
@@ -32,6 +34,7 @@ export default {
     SectionContactUs,
     SectionCourses,
     SectionRate,
+    SectionAbout,
     PageFooter
   },
   data() {
