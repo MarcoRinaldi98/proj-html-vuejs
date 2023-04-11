@@ -1,7 +1,7 @@
 <template>
   <header>
-    <PageHeaderTop />
-    <PageHeaderBottom :nav="navLinks" />
+    <HeaderTop />
+    <HeaderJumbotron :nav="navLinks" />
   </header>
 
   <main>
@@ -13,16 +13,14 @@
 </template>
 
 <script>
-import PageHeaderTop from './components/PageHeaderTop.vue';
-import PageHeaderBottom from './components/PageHeaderBottom.vue';
-import PageMain from './components/PageMain.vue';
+import HeaderTop from './components/HeaderTop.vue';
+import HeaderJumbotron from './components/HeaderJumbotron.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
   components: {
-    PageHeaderTop,
-    PageHeaderBottom,
-    PageMain,
+    HeaderTop,
+    HeaderJumbotron,
     PageFooter
   },
   data() {

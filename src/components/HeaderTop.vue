@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: "PageHeaderTop"
+    name: "HeaderTop"
 }
 </script>
 
 <template>
-    <section class="ms_header-top">
+    <section id="header-top">
         <div class="container-sm h-100 w-100">
             <span>
                 We have a 95% Successful Pass Rate!
@@ -22,7 +22,7 @@ export default {
 @use '../styles/partials/variables';
 @use '../styles/partials/mixins';
 
-.ms_header-top {
+#header-top {
     background-color: variables.$secondary-color;
     height: 30px;
 
