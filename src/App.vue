@@ -11,6 +11,7 @@
     <SectionRate />
     <SectionAbout />
     <SectionTestimonials />
+    <SectionBlog />
   </main>
   <footer>
 
@@ -26,6 +27,7 @@ import SectionCourses from './components/SectionCourses.vue';
 import SectionRate from './components/SectionRate.vue';
 import SectionAbout from './components/SectionAbout.vue';
 import SectionTestimonials from './components/SectionTestimonials.vue';
+import SectionBlog from './components/SectionBlog.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
@@ -38,6 +40,7 @@ export default {
     SectionRate,
     SectionAbout,
     SectionTestimonials,
+    SectionBlog,
     PageFooter
   },
   data() {
