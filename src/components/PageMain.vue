@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "PageHeader"
+    name: "PageMain"
 }
 </script>
 
