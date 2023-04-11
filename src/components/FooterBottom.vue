@@ -6,6 +6,11 @@ export default {
 
 <template>
     <section id="footer-bottom">
+        <div class="ms_go-top">
+            <a href="#">
+                <i class="p-3 text-white fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
         <div class="container-sm">
             <div>
                 © Copyright 2012 - 2020 | Avada Theme by
@@ -46,6 +51,17 @@ export default {
 #footer-bottom {
     height: 100px;
     background-color: variables.$secondary-color;
+    position: relative;
+
+    & .ms_go-top {
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        width: 70px;
+        height: 50px;
+        background-color: black;
+        @include mixins.d-flex-center;
+    }
 
     & .container-sm {
         @include mixins.d-flex-between;
