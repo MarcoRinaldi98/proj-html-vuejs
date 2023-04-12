@@ -90,7 +90,7 @@ export default {
 
     & .ms_form {
         background-color: variables.$color-white;
-        box-shadow: 0px 0px 5px variables.$color-light-grey;
+        box-shadow: 0px 0px 5px 5px variables.$color-light-grey;
         padding: 2rem;
         border-radius: 10px;
         width: 80%;

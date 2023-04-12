@@ -104,7 +104,7 @@ export default {
         width: 100%;
         border-radius: 10px;
         border-top: 6px solid variables.$primary-color;
-        box-shadow: 2px 2px 5px variables.$color-light-grey;
+        box-shadow: 0px 0px 2px 2px variables.$color-light-grey;
         background-color: variables.$color-white;
         padding: 2rem 0;
 
