@@ -53,7 +53,7 @@ export default {
     return {
       navLinks: [
         {
-          href: "#home",
+          href: "#",
           text: "home"
         },
         {
@@ -61,7 +61,7 @@ export default {
           text: "about"
         },
         {
-          href: "#prices",
+          href: "#contact-us",
           text: "prices"
         },
         {
@@ -69,7 +69,7 @@ export default {
           text: "courses"
         },
         {
-          href: "#locations",
+          href: "#footer-top",
           text: "locations"
         },
         {
