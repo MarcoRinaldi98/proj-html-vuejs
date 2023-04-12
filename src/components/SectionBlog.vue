@@ -56,10 +56,14 @@ export default {
     padding-bottom: 150px;
 
     & .ms_content {
-        border-top: 5px solid variables.$extra-color6;
+        border-top: 5px solid variables.$extra-color3;
         position: relative;
         top: -50px;
         padding-bottom: 20px;
+
+        & h2 {
+            color: variables.$color-dark-grey;
+        }
 
         & .ms_plus {
             position: absolute;
@@ -73,6 +77,14 @@ export default {
             @include mixins.button;
             text-decoration: none;
             font-weight: 600;
+
+            &:hover {
+                background-color: lighten(variables.$primary-color, 10);
+            }
+
+            &:active {
+                background-color: darken(variables.$primary-color, 10);
+            }
         }
     }
 
@@ -86,15 +98,21 @@ export default {
         & div {
             font-size: 14px;
             padding-bottom: 20px;
-            color: variables.$extra-color7;
+            color: variables.$color-grey;
 
             & span {
                 color: variables.$primary-color;
+
+                &:hover {
+                    color: lighten(variables.$primary-color, 10);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }
 
         & p {
-            color: variables.$extra-color7;
+            color: variables.$color-grey;
         }
     }
 }

@@ -28,5 +28,9 @@ export default {
     background-image: url(/bg-contact-us.jpg);
     background-size: cover;
     background-position: center;
+
+    & h1 {
+        font-weight: 600;
+    }
 }
 </style>

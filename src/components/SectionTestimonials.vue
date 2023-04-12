@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: "SectionTestimonials"
+    name: "SectionTestimonials",
+    props: {
+        testimonials: Array
+    }
 }
 </script>
 
@@ -15,14 +18,19 @@ export default {
                     <img src="/testimonial-sophia.png" alt="foto di sophia">
                 </div>
 
-                <p>Avado D'iving School really helped build my confidence behind the
-                    wheel and with driving in generon ond they got me a first time poss!
-                    Highly recammended.</p>
+                <p>Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond
+                    they got me a first time poss! Highly recammended.</p>
 
                 <h5>Sophia Jones</h5>
 
                 <div class="ms_indicators">
                     <span class="ms_point ms_active">
+
+                    </span>
+                    <span class="ms_point">
+
+                    </span>
+                    <span class="ms_point">
 
                     </span>
                     <span class="ms_point">
@@ -57,10 +65,11 @@ export default {
             & h2 {
                 font-size: 40px;
                 font-weight: bold;
+                color: variables.$color-dark-grey;
             }
 
             & p {
-                color: variables.$secondary-color;
+                color: variables.$color-grey;
                 line-height: 2rem;
                 padding: 0 3rem;
             }
@@ -69,6 +78,7 @@ export default {
                 font-size: 18px;
                 font-weight: bold;
                 padding: 2rem 0;
+                color: variables.$color-grey;
             }
 
             & .ms_image-list {
@@ -91,7 +101,7 @@ export default {
                     height: 10px;
                     width: 10px;
                     border-radius: 50%;
-                    border: 1px solid black;
+                    border: 1px solid variables.$color-grey;
                     margin-right: 10px;
                 }
             }
@@ -100,6 +110,6 @@ export default {
 }
 
 .ms_active {
-    background-color: grey;
+    background-color: variables.$color-grey;
 }
 </style>

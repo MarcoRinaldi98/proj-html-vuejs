@@ -10,7 +10,7 @@
     <SectionCourses :type="coursesType" />
     <SectionRate />
     <SectionAbout :instructors="instructorList" />
-    <SectionTestimonials />
+    <SectionTestimonials :testimonials="testimonalsList" />
     <SectionBlog />
     <SectionNewsletter />
   </main>
@@ -202,6 +202,33 @@ export default {
         {
           name: 'Instructors',
           image: '/courses3.jpg'
+        }
+      ],
+      testimonalsList: [
+        {
+          img: '/testimonial-sophia.png',
+          name: 'Sophia Jones',
+          dichiarazione: "Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond they got me a first time poss! Highly recammended."
+        },
+        {
+          img: '/testimonial-kelly.png',
+          name: 'Kelly Robertson',
+          dichiarazione: "Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond they got me a first time poss! Highly recammended."
+        },
+        {
+          img: '/testimonial-kate.png',
+          name: 'Kate Will',
+          dichiarazione: "Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond they got me a first time poss! Highly recammended."
+        },
+        {
+          img: '/testimonial-harold.png',
+          name: 'Harold Beni',
+          dichiarazione: "Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond they got me a first time poss! Highly recammended."
+        },
+        {
+          img: '/testimonial-grant.png',
+          name: 'Grant Hart',
+          dichiarazione: "Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond they got me a first time poss! Highly recammended."
         }
       ]
     }

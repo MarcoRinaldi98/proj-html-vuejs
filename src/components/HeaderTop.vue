@@ -30,7 +30,7 @@ export default {
         @include mixins.d-flex-between;
 
         & span {
-            color: variables.$extra-color8;
+            color: variables.$color-grey;
             font-size: 14px;
         }
     }

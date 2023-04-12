@@ -60,12 +60,13 @@ export default {
     background-color: variables.$color-white;
     padding: 6rem 2rem;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px variables.$extra-color7;
+    box-shadow: 0px 0px 4px variables.$color-light-grey;
     position: relative;
     top: -20px;
 
     & h2 {
         font-size: 34px;
+        color: variables.$color-dark-grey;
     }
 
     & p {
@@ -76,6 +77,14 @@ export default {
     & a {
         text-decoration: none;
         @include mixins.button;
+
+        &:hover {
+            background-color: lighten(variables.$primary-color, 10);
+        }
+
+        &:active {
+            background-color: darken(variables.$primary-color, 10);
+        }
     }
 }
 
@@ -87,7 +96,7 @@ export default {
     & h3 {
         font-size: 16px;
         font-weight: bold;
-        color: variables.$extra-color8;
+        color: variables.$extra-color3;
         padding: 1.5rem 0;
     }
 
@@ -95,6 +104,13 @@ export default {
         @include mixins.button2;
         text-decoration: none;
         font-size: 12px;
+
+        &:hover {
+            color: variables.$primary-color;
+            border: 4px solid variables.$primary-color;
+        }
+
+
     }
 }
 </style>

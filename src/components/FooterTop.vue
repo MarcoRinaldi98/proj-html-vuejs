@@ -65,29 +65,44 @@ export default {
 
         & p {
             padding-top: 20px;
-            color: variables.$extra-color7;
+            color: variables.$color-grey;
+            font-size: 14px;
         }
 
         & h3 {
-            font-size: 22px;
-            padding-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 10px;
             color: variables.$color-white;
         }
 
         & .ms_button {
             @include mixins.button;
             text-decoration: none;
+            font-weight: 600;
+
+            &:hover {
+                background-color: lighten(variables.$primary-color, 10);
+            }
+
+            &:active {
+                background-color: darken(variables.$primary-color, 10);
+            }
         }
 
         & ul li {
             list-style: none;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0.5rem 0;
-            color: variables.$extra-color7;
+            color: variables.$color-grey;
 
             & a {
                 text-decoration: none;
                 color: variables.$primary-color;
+
+                &:hover {
+                    color: lighten(variables.$primary-color, 10);
+                }
             }
 
             & i {

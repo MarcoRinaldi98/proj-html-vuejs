@@ -32,13 +32,14 @@ export default {
                 <div class="ms_box col-4" v-for="(person, index) in instructors" :key="index">
                     <div class="ms_rate">
                         <div class="card border-0">
-                            <img :src="person.img" class="card-img-top" :alt="'foto di ' + person.name">
+                            <img :src="person.img" class="card-img-top" :alt="'foto di ' + person.name"
+                                :title="'Instructor ' + person.name">
                             <div class="card-body">
                                 <h3>
                                     {{ person.name }}
                                 </h3>
-                                <ul>
-                                    <li v-for="(element, i) in person.social" :key="i">
+                                <ul class="py-1">
+                                    <li class="pe-4" v-for="(element, i) in person.social" :key="i">
                                         <a :href="element.href">
                                             <i :class="element.icon"></i>
                                         </a>
@@ -61,13 +62,13 @@ export default {
 @use '../styles/partials/mixins';
 
 .col-8 h2 {
-    color: variables.$secondary-alternative-color;
+    color: variables.$color-dark-grey;
     font-size: 36px;
     font-weight: bold;
 }
 
 .col-8 p {
-    color: variables.$extra-color7;
+    color: variables.$color-grey;
     line-height: 2rem;
     font-size: 18px;
 }
@@ -81,6 +82,15 @@ export default {
         text-decoration: none;
         width: 100%;
         text-align: center;
+        font-weight: 600;
+
+        &:hover {
+            background-color: lighten(variables.$primary-color, 10);
+        }
+
+        &:active {
+            background-color: darken(variables.$primary-color, 10);
+        }
     }
 }
 
@@ -93,8 +103,8 @@ export default {
         height: 100%;
         width: 100%;
         border-radius: 10px;
-        border-top: 6px solid variables.$primary-alternative-color;
-        box-shadow: 0px 10px 10px variables.$extra-color7;
+        border-top: 6px solid variables.$primary-color;
+        box-shadow: 2px 2px 5px variables.$color-light-grey;
         background-color: variables.$color-white;
         padding: 2rem 0;
 
@@ -114,17 +124,16 @@ export default {
                 }
 
                 & p {
-                    color: variables.$extra-color7;
+                    color: variables.$color-grey;
                 }
 
                 & ul li {
                     display: inline-block;
                     list-style: none;
-                    padding: 5px 10px;
 
                     & a {
                         text-decoration: none;
-                        color: variables.$extra-color7;
+                        color: variables.$color-grey;
                     }
                 }
             }

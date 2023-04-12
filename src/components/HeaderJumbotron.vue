@@ -65,7 +65,7 @@ export default {
         left: 0;
         width: 100%;
         height: 90px;
-        background-color: rgba($color: variables.$secondary-color, $alpha: 0.4);
+        background-color: rgba($color: variables.$secondary-color, $alpha: 0.5);
 
         & nav {
             @include mixins.d-flex-between;
@@ -94,7 +94,7 @@ export default {
                     }
 
                     &:hover .ms_nav-link {
-                        border-bottom: 2px solid variables.$primary-color;
+                        border-bottom: 3px solid variables.$primary-color;
                         color: variables.$primary-color;
                     }
 
@@ -113,6 +113,14 @@ export default {
                         text-decoration: none;
                         font-weight: bold;
                         font-size: 14px;
+
+                        &:hover {
+                            background-color: lighten(variables.$primary-color, 10);
+                        }
+
+                        &:active {
+                            background-color: darken(variables.$primary-color, 10);
+                        }
                     }
                 }
             }
@@ -124,6 +132,11 @@ export default {
         color: variables.$color-white;
         padding-top: 300px;
         letter-spacing: 1.5px;
+
+        & h1 {
+            font-weight: 600;
+        }
+
     }
 
     & .ms_try {
@@ -134,14 +147,14 @@ export default {
         & .ms_square {
             height: 60px;
             width: 60px;
-            background-color: variables.$extra-color7;
+            background-color: variables.$color-white;
             cursor: pointer;
             border-radius: 5px;
             margin-bottom: 6px;
             position: relative;
             @include mixins.d-flex-around;
             flex-direction: column;
-            box-shadow: 0px 0px 5px variables.$color-black;
+            box-shadow: 0px 0px 2px variables.$color-light-grey;
 
             & .ms_price {
                 font-size: 12px;
@@ -162,14 +175,14 @@ export default {
                 width: 100%;
                 text-align: center;
                 font-weight: bold;
-                color: variables.$color-black;
+                color: variables.$extra-color2;
             }
         }
     }
 }
 
 .ms_color1 {
-    color: variables.$color-black;
+    color: variables.$extra-color2;
 }
 
 .ms_color2 {

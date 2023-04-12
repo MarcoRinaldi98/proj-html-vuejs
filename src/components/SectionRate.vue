@@ -80,8 +80,8 @@ export default {
                 height: 100%;
                 width: 100%;
                 border-radius: 10px;
-                border-top: 6px solid variables.$primary-alternative-color;
-                box-shadow: 0px 10px 10px variables.$extra-color7;
+                border-top: 6px solid variables.$primary-color;
+                box-shadow: 0px 10px 10px variables.$color-light-grey;
                 background-color: variables.$color-white;
                 padding: 2rem 0;
 
@@ -91,7 +91,7 @@ export default {
                     width: 300px;
                     height: 300px;
                     border-radius: 50%;
-                    background: conic-gradient(variables.$primary-alternative-color var(--progress), variables.$extra-color7 0deg);
+                    background: conic-gradient(variables.$primary-color var(--progress), variables.$color-light-grey 0deg);
                     font-size: 0;
                     position: relative;
 
@@ -114,12 +114,12 @@ export default {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         font-size: 50px;
-                        color: variables.$secondary-alternative-color;
+                        color: variables.$color-grey;
                     }
                 }
 
                 & .ms_type-rate {
-                    color: variables.$secondary-alternative-color;
+                    color: variables.$color-grey;
                     text-align: center;
                     font-weight: 500;
                     font-size: 20px;

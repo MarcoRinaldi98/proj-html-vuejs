@@ -37,6 +37,7 @@ export default {
 
         & h1 {
             font-weight: 500;
+            color: variables.$color-dark-grey;
         }
 
         & form input {
@@ -47,11 +48,21 @@ export default {
         & form button {
             width: 100%;
             @include mixins.button;
+            background-color: variables.$primary-color;
             border: none;
+            font-weight: 600;
+
+            &:hover {
+                background-color: lighten(variables.$primary-color, 10);
+            }
+
+            &:active {
+                background-color: darken(variables.$primary-color, 10);
+            }
         }
 
         & div {
-            color: grey;
+            color: variables.$color-grey;
             font-size: 14px;
         }
     }

@@ -9,7 +9,7 @@ export default {
 
 <template>
     <section id="footer-bottom">
-        <div class="ms_go-top">
+        <div class="ms_go-top rounded-top">
             <a href="#">
                 <i class="p-3 text-white fa-solid fa-chevron-up"></i>
             </a>
@@ -38,7 +38,7 @@ export default {
 
 #footer-bottom {
     height: 100px;
-    background-color: variables.$secondary-color;
+    background-color: variables.$secondary-alternative-color;
     position: relative;
 
     & .ms_go-top {
@@ -47,7 +47,7 @@ export default {
         bottom: 0;
         width: 70px;
         height: 50px;
-        background-color: black;
+        background-color: variables.$secondary-color;
         @include mixins.d-flex-center;
     }
 
@@ -56,7 +56,7 @@ export default {
         height: 100%;
 
         & div {
-            color: variables.$extra-color7;
+            color: variables.$color-grey;
 
             & span {
                 color: variables.$primary-color;

@@ -66,6 +66,7 @@ export default {
     & h2 {
         padding-top: 20px;
         font-size: 32px;
+        color: variables.$color-dark-grey;
     }
 
     & h6 {
@@ -81,6 +82,7 @@ export default {
         color: variables.$color-grey;
         line-height: 1.5rem;
         padding-right: 2rem;
+        line-height: 2rem;
     }
 }
 
@@ -88,7 +90,7 @@ export default {
 
     & .ms_form {
         background-color: variables.$color-white;
-        box-shadow: 0px 0px 10px variables.$extra-color7;
+        box-shadow: 0px 0px 5px variables.$color-light-grey;
         padding: 2rem;
         border-radius: 10px;
         width: 80%;
@@ -107,16 +109,25 @@ export default {
         }
 
         & form div input {
-            background-color: variables.$extra-color7;
+            background-color: variables.$color-light-grey;
         }
 
         & form div span {
-            background-color: variables.$extra-color7;
+            background-color: variables.$color-light-grey;
         }
 
         & form div button {
             @include mixins.button;
             border: none;
+            background-color: variables.$primary-color;
+
+            &:hover {
+                background-color: lighten(variables.$primary-color, 10);
+            }
+
+            &:active {
+                background-color: darken(variables.$primary-color, 10);
+            }
         }
     }
 }
