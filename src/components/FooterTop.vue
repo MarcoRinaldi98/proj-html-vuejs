@@ -1,6 +1,10 @@
 <script>
 export default {
-    name: "FooterTop"
+    name: "FooterTop",
+    props: {
+        contact: Array,
+        courses: Array
+    }
 }
 </script>
 
@@ -20,49 +24,19 @@ export default {
                 <div class="col-3">
                     <h3>CONTACT DETAILS</h3>
                     <ul class="p-0">
-                        <li class="d-flex">
-                            <i class="fa-solid fa-house-chimney-window"></i>
-                            <span>12345, North Main Street, New York, NY 5555555</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fa-solid fa-phone-flip"></i>
-                            <span>1.800.555.6789</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fa-regular fa-envelope"></i>
-                            <span>info@your-domain.com</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fa-solid fa-link"></i>
-                            <span>Theme-Fusion.com</span>
+                        <li v-for="(element, index) in contact" class="d-flex" :key="index">
+                            <i :class="element.icon"></i>
+                            <span>{{ element.name }}</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <h3>COURSES</h3>
                     <ul class="p-0">
-                        <li>
+                        <li v-for="(course, index) in courses" :key="index">
                             <a href="#">
-                                <i class="fa-regular fa-circle-right"></i>
-                                Pass Plus
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-regular fa-circle-right"></i>
-                                Intensive Course
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-regular fa-circle-right"></i>
-                                Automatic
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-regular fa-circle-right"></i>
-                                Instructor Training
+                                <i :class="course.icon"></i>
+                                {{ course.name }}
                             </a>
                         </li>
                     </ul>

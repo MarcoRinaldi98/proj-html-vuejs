@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: "SectionAbout"
+    name: "SectionAbout",
+    props: {
+        instructors: Array
+    }
 }
 </script>
 
@@ -26,100 +29,23 @@ export default {
         </div>
         <div class="container-sm">
             <div class="row">
-                <div class="ms_box col-4">
+                <div class="ms_box col-4" v-for="(person, index) in instructors" :key="index">
                     <div class="ms_rate">
                         <div class="card border-0">
-                            <img src="/about1.jpg" class="card-img-top" alt="foto di mikeh">
+                            <img :src="person.img" class="card-img-top" :alt="'foto di ' + person.name">
                             <div class="card-body">
                                 <h3>
-                                    Mike Hart
+                                    {{ person.name }}
                                 </h3>
                                 <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-instagram"></i>
+                                    <li v-for="(element, i) in person.social" :key="i">
+                                        <a :href="element.href">
+                                            <i :class="element.icon"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
-                                    consectetur adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ms_box col-4">
-                    <div class="ms_rate">
-                        <div class="card border-0">
-                            <img src="/about2.jpg" class="card-img-top" alt="foto di johns">
-                            <div class="card-body">
-                                <h3>
-                                    John Smith
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet.
-                                    consectetur adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ms_box col-4">
-                    <div class="ms_rate">
-                        <div class="card border-0">
-                            <img src="/about3.jpg" class="card-img-top" alt="foto di angela">
-                            <div class="card-body">
-                                <h3>
-                                    Angela Hart
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet.
-                                    consectetur adipiscing elit.
+                                    {{ person.description }}
                                 </p>
                             </div>
                         </div>

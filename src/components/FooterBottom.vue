@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: "FooterBottom"
+    name: "FooterBottom",
+    props: {
+        social: Array
+    }
 }
 </script>
 
@@ -19,24 +22,9 @@ export default {
                 <span> WordPress </span>
             </div>
             <ul>
-                <li>
+                <li v-for="(element, index) in social" :key="index">
                     <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands" :class="element.name"></i>
                     </a>
                 </li>
             </ul>

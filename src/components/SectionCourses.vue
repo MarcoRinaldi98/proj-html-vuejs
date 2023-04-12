@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: "SectionCourses"
+    name: "SectionCourses",
+    props: {
+        type: Array
+    }
 }
 </script>
 
@@ -24,29 +27,11 @@ export default {
                         </a>
                     </div>
                 </div>
-                <div class="col-2 mt-5">
+                <div class="col-2 mt-5" v-for="(element, index) in type" :key="index">
                     <div class="card bg-transparent border-0">
-                        <img src="/courses1.jpg" class="card-img-top rounded-0" alt="immagine relativa al primo corso">
+                        <img :src="element.image" :alt="'foto del corso di ' + element.name">
                         <div class="card-body">
-                            <h3>Pass Plus</h3>
-                            <a href="#">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 mt-5">
-                    <div class="card bg-transparent border-0">
-                        <img src="/courses2.jpg" class="card-img-top rounded-0" alt="immagine relativa al secondo corso">
-                        <div class="card-body">
-                            <h3>Intensive Course</h3>
-                            <a href="#">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 mt-5">
-                    <div class="card bg-transparent border-0">
-                        <img src="/courses3.jpg" class="card-img-top rounded-0" alt="immagine relativa al terzo corso">
-                        <div class="card-body">
-                            <h3>Instructors</h3>
+                            <h3>{{ element.name }}</h3>
                             <a href="#">LEARN MORE</a>
                         </div>
                     </div>

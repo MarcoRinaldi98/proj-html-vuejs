@@ -7,16 +7,16 @@
   <main>
     <SectionCallback />
     <SectionContactUs />
-    <SectionCourses />
+    <SectionCourses :type="coursesType" />
     <SectionRate />
-    <SectionAbout />
+    <SectionAbout :instructors="instructorList" />
     <SectionTestimonials />
     <SectionBlog />
     <SectionNewsletter />
   </main>
   <footer>
-    <FooterTop />
-    <FooterBottom />
+    <FooterTop :contact="contactList" :courses="courseList" />
+    <FooterBottom :social="socialList" />
   </footer>
 </template>
 
@@ -75,6 +75,133 @@ export default {
         {
           href: "#blog",
           text: "blog"
+        }
+      ],
+      socialList: [
+        {
+          type: 'fa-brand',
+          name: 'fa-facebook-f'
+        },
+        {
+          type: 'fa-brand',
+          name: 'fa-twitter'
+        },
+        {
+          type: 'fa-brand',
+          name: 'fa-youtube'
+        },
+        {
+          type: 'fa-brand',
+          name: 'fa-instagram'
+        }
+      ],
+      contactList: [
+        {
+          icon: 'fa-solid fa-house-chimney-window',
+          name: '12345, North Main Street, New York, NY 5555555'
+        },
+        {
+          icon: 'fa-solid fa-phone-flip',
+          name: '1.800.555.6789'
+        },
+        {
+          icon: 'fa-regular fa-envelope',
+          name: 'info@your-domain.com'
+        },
+        {
+          icon: 'fa-solid fa-link',
+          name: 'Theme-Fusion.com'
+        }
+      ],
+      courseList: [
+        {
+          icon: 'fa-regular fa-circle-right',
+          name: 'Pass Plus'
+        },
+        {
+          icon: 'fa-regular fa-circle-right',
+          name: 'Intensive Course'
+        },
+        {
+          icon: 'fa-regular fa-circle-right',
+          name: 'Automatic'
+        },
+        {
+          icon: 'fa-regular fa-circle-right',
+          name: 'Instructor Training'
+        }
+      ],
+      instructorList: [
+        {
+          img: '/about1.jpg',
+          name: 'Mike Hart',
+          social: [
+            {
+              icon: 'fa-brands fa-facebook-f',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-twitter',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-instagram',
+              href: '#'
+            }
+          ],
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+          img: '/about2.jpg',
+          name: 'John Smith',
+          social: [
+            {
+              icon: 'fa-brands fa-facebook-f',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-twitter',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-instagram',
+              href: '#'
+            }
+          ],
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+          img: '/about3.jpg',
+          name: 'Angela Hart',
+          social: [
+            {
+              icon: 'fa-brands fa-facebook-f',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-twitter',
+              href: '#'
+            },
+            {
+              icon: 'fa-brands fa-instagram',
+              href: '#'
+            }
+          ],
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }
+      ],
+      coursesType: [
+        {
+          name: 'Pass Plus',
+          image: '/courses1.jpg'
+        },
+        {
+          name: 'Intensive Course',
+          image: '/courses2.jpg'
+        },
+        {
+          name: 'Instructors',
+          image: '/courses3.jpg'
         }
       ]
     }
