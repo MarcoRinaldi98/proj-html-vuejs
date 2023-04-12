@@ -9,7 +9,7 @@ export default {
 
 <template>
     <section id="about">
-        <div class="container-sm">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-8 pt-5">
                     <h2>
@@ -27,7 +27,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="container-sm">
+        <div class="container-lg">
             <div class="row">
                 <div class="ms_box col-4" v-for="(person, index) in instructors" :key="index">
                     <div class="ms_rate">

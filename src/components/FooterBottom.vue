@@ -14,7 +14,7 @@ export default {
                 <i class="p-3 text-white fa-solid fa-chevron-up"></i>
             </a>
         </div>
-        <div class="container-sm">
+        <div class="container-lg">
             <div>
                 © Copyright 2012 - 2020 | Avada Theme by
                 <span> ThemeFusion </span>
@@ -43,15 +43,15 @@ export default {
 
     & .ms_go-top {
         position: absolute;
-        right: 50px;
+        right: 120px;
         bottom: 0;
-        width: 70px;
-        height: 50px;
+        width: 60px;
+        height: 40px;
         background-color: variables.$secondary-color;
         @include mixins.d-flex-center;
     }
 
-    & .container-sm {
+    & .container-lg {
         @include mixins.d-flex-between;
         height: 100%;
 

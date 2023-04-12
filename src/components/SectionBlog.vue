@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="blog">
-        <div class="container-sm bg-white text-center rounded-top ms_content">
+        <div class="container-lg bg-white text-center rounded-top ms_content">
             <h2 class="py-5 fs-2 fw-semibold">Latest News</h2>
             <div class="row">
                 <div class="col-6">

@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="callback" class="pb-5">
-        <div class="container-sm">
+        <div class="container-lg">
             <div class="row">
                 <div class="ms_col-left col-6">
                     <h2 class="fw-semibold">

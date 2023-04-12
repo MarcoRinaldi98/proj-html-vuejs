@@ -9,7 +9,7 @@ export default {
 
 <template>
     <section id="courses">
-        <div class="container-sm">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-6">
                     <div class="ms_new">
@@ -111,6 +111,17 @@ export default {
         }
 
 
+    }
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+    .card {
+        margin-top: 100px;
+    }
+
+    .card-body a {
+        display: none;
     }
 }
 </style>

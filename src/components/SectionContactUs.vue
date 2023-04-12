@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="contact-us">
-        <div class="container-sm d-flex justify-content-between align-items-center h-100">
+        <div class="container-lg d-flex justify-content-between align-items-center h-100">
             <div class="text-white">
                 <h1 class="pb-2">Start Learning to Drive Today</h1>
                 <h4>Give us a call to schedule your frist driving lesson</h4>

@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="header-top">
-        <div class="container-sm h-100 w-100">
+        <div class="container-lg h-100 w-100">
             <span>
                 We have a 95% Successful Pass Rate!
             </span>

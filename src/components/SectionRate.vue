@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="rate">
-        <div class="container-sm">
+        <div class="container-lg">
             <div class="row">
                 <div class="ms_box col-4">
                     <div class="ms_rate">
@@ -70,7 +70,7 @@ export default {
         background-size: contain;
     }
 
-    & .container-sm {
+    & .container-lg {
         position: relative;
 
         & .ms_box {

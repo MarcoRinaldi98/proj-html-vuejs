@@ -10,7 +10,7 @@ export default {
 <template>
     <section id="jumbotron">
         <div id="header-bottom">
-            <nav class="container-sm">
+            <nav class="container-lg">
                 <div class="ms_brand">
                     <a href="#">
                         <img src="/logo-avada.png" alt="Logo Avada Driving School" />
@@ -88,7 +88,7 @@ export default {
                         text-decoration: none;
                         text-transform: uppercase;
                         font-size: 14px;
-                        font-weight: bold;
+                        font-weight: 600;
                         color: variables.$color-white;
                         padding-bottom: 1rem;
                     }
@@ -187,5 +187,12 @@ export default {
 
 .ms_color2 {
     color: variables.$primary-color;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+    .ms_button {
+        display: none;
+    }
 }
 </style>

@@ -10,7 +10,7 @@ export default {
 
 <template>
     <section id="footer-top">
-        <div class="container-sm py-5">
+        <div class="container-lg py-5">
             <div class="row">
                 <div class="col-3">
                     <img class="w-100" src="/logo-avada.png" alt="logo avada">
@@ -61,7 +61,7 @@ export default {
 #footer-top {
     background-image: url(/footer-bg.jpg);
 
-    & .container-sm {
+    & .container-lg {
 
         & p {
             padding-top: 20px;
