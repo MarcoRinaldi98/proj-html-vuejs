@@ -3,6 +3,25 @@ export default {
     name: "SectionTestimonials",
     props: {
         testimonials: Array
+    },
+    data() {
+        return {
+            activeIndex: 0,
+            autoplay: null
+        }
+    },
+    methods: {
+        goNext() {
+            this.activeIndex++;
+            if (this.activeIndex == this.testimonials.length) {
+                this.activeIndex = 0;
+            }
+        },
+        autoPlay() {
+            this.autoplay = setInterval(this.goNext, 5000);
+        }
+    }, mounted() {
+        this.autoPlay();
     }
 }
 </script>
@@ -15,28 +34,16 @@ export default {
                 <p>Here's what our happy drivers had to say about our services:</p>
 
                 <div class="ms_image-list">
-                    <img src="/testimonial-sophia.png" alt="foto di sophia">
+                    <img :src="testimonials[activeIndex].img" alt="foto testimonial">
                 </div>
 
-                <p>Avado D'iving School really helped build my confidence behind the wheel and with driving in generon ond
-                    they got me a first time poss! Highly recammended.</p>
+                <p>{{ testimonials[activeIndex].dichiarazione }}</p>
 
-                <h5>Sophia Jones</h5>
+                <h5>{{ testimonials[activeIndex].name }}</h5>
 
                 <div class="ms_indicators">
-                    <span class="ms_point ms_active">
-
-                    </span>
-                    <span class="ms_point">
-
-                    </span>
-                    <span class="ms_point">
-
-                    </span>
-                    <span class="ms_point">
-
-                    </span>
-                    <span class="ms_point">
+                    <span :class="[activeIndex == i ? 'ms_point ms_active' : 'ms_point']" v-for="(item, i) in testimonials"
+                        @click="activeIndex = i">
 
                     </span>
                 </div>
